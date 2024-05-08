@@ -60,11 +60,13 @@ print("\nClassification Report:")
 print(classification_rep)
 ```
 
+
+
+
+
+
+
 ## Output:
 ![image](https://github.com/kabilan22000284/EX-6-NN/assets/123469171/5ef34d7a-6cb4-4e6a-a4d4-d2b0f4f6cad8)
-
-
-
-
 <H3>Results:</H3>
 Thus, an ANN with MLP is constructed and trained to predict the heart attack using python.
