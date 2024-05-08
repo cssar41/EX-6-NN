@@ -1,5 +1,5 @@
-<H3>ENTER YOUR NAME : Saravanan C</H3>
-<H3>ENTER YOUR REGISTER NO : 212222110041</H3>
+## ENTER YOUR NAME: Saravanan C
+<H3>ENTER YOUR REGISTER NO:212222110041</H3>
 <H3>EX. NO.6</H3>
 <H3>DATE:</H3>
 <H1 ALIGN =CENTER>Heart attack prediction using MLP</H1>
@@ -17,18 +17,17 @@ Step 9:Evaluate the model's accuracy by comparing the predicted labels (y_pred) 
 Step 10:Print the accuracy of the model.<BR>
 Step 11:Plot the error convergence during training using plt.plot() and plt.show().<BR>
 
-<H3>Program: </H3>
-
-```PYTHON
-import numpy as np                              
-import pandas as pd                             
+## Program:
+```
+import numpy as np
+import pandas as pd
 from sklearn.neural_network import MLPClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import accuracy_score,classification_report,confusion_matrix
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('/content/ex6 dataset.csv')
+data = pd.read_csv('heart.csv')
 
 X = data.iloc[:, :-1].values  # Features
 y = data.iloc[:, -1].values   # Labels
@@ -61,12 +60,11 @@ print("\nClassification Report:")
 print(classification_rep)
 ```
 
-<H3>Output:</H3>
+## Output:
+![image](https://github.com/kabilan22000284/EX-6-NN/assets/123469171/5ef34d7a-6cb4-4e6a-a4d4-d2b0f4f6cad8)
 
-<img src = "https://github.com/Adhithyaram29D/EX-6-NN/assets/119393540/9910c328-aa00-4773-863c-af3ac1f9a521" width="200">
-<br>
-<img src = "https://github.com/Adhithyaram29D/EX-6-NN/assets/119393540/d3a58d45-7d76-4ec7-a70c-bd0de5cb784f" width="300">
-<img src = "https://github.com/Adhithyaram29D/EX-6-NN/assets/119393540/5294aa69-37ed-4862-bf83-89cc994d5888" width="300">
+
+
 
 <H3>Results:</H3>
 Thus, an ANN with MLP is constructed and trained to predict the heart attack using python.
